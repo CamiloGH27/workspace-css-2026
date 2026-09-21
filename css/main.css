@@ -1,0 +1,57 @@
+/* Style file for index.html
+1 Global variables
+2-- layout
+*/
+
+
+/* Global variable */
+:root{
+    --color-bg-body: #d88cd8;
+    --color-bg-section: hsl(98, 55%, 34%);
+    --color-font-body: #000;
+
+    --img-board: url('../img/water.webp');
+}
+
+#zen-explanation{--pos-top: 170px; --pos-left: 350px; --front-color:#000}
+
+#zen-participation{--pos-top: 10px; --pos-left: 20px; --front-color: #fff}
+
+
+body{
+    background-color: var(--color-bg-body);
+    color: var(--color-font-body);
+
+}
+
+/* 2----Layout */
+/* relative position */
+.page-wrapper{
+    background-image: var(--img-board) ;
+    position: fixed;
+    left: 30%;
+    width: 50%;
+    height: 70vh;
+}
+
+
+abbr{
+    position: relative;
+    top: -10px;
+    font-size: 2em;
+}
+
+article{
+    position: absolute;
+    top: var(--pos-top);
+    left: var(--pos-left);
+    background-color: var(--color-bg-section);
+    width: 300px;
+    height: 40vh;
+
+}
+/* hide the element */
+
+footer,aside{
+    display: none;
+}
